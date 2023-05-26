@@ -50,7 +50,7 @@ export default async function page({ params }) {
             <section className="flex flex-row flex-wrap items-center justify-between pb-24 pt-10 ">
                 {
                     product.map((product) => (
-                        <CardComponent id={product.id} title={product.title} price={product.price} image={product.images[0]} />
+                        <CardComponent key={product.id} id={product.id} title={product.title} price={product.price} image={product.images[0]} />
                     ))
                 }
             </section>
